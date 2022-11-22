@@ -182,9 +182,9 @@
 	width: 32px;
 	line-height: 32px;
 	text-shadow: 1px 1px #1a1a1a;
-}
+}	
 
-.friendPlayerLevel.lvl_10 { background-image: url('Hegaxon.png'); }
+.friendPlayerLevel.lvl_10 { background-image: url('https://github.com/DominykK/DominykK.github.io/blob/main/Hexagon.png'); }
 .friendPlayerLevel.lvl_20 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_wings.png' );  }
 .friendPlayerLevel.lvl_30 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_arrows.png' );  }
 .friendPlayerLevel.lvl_40 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_crystals.png' );  }
