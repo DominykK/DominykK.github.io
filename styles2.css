@@ -1,0 +1,298 @@
+div {
+    display: block;
+}
+
+body {
+	text-align: left;
+    font-size: 14px;
+    background: linear-gradient(180deg, #262D33 -3.38%, #1D1E20 78.58%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+}
+
+.profile_background{
+	position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;	
+}
+
+.profile_header_background {
+    position: relative;
+    max-width: 1018px;
+    min-height: 224px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.profile_header_background_texture {
+    max-width: 976px;
+    min-height: 224px;
+    margin: 0 auto;
+    backdrop-filter: blur(20px);
+    background-color: rgba( 0, 0, 0, 0.3 );
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile_header{
+    position: relative;
+    max-width: 926px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.profile_header_content{
+	position: relative;
+    padding-top: 8px;
+    padding-right: 8px;
+    color: #c4c4c4;
+    font-size: 13px;
+}
+
+.profile_header_user {
+    position: absolute;
+    left: 186px;
+    right: 268px;
+    white-space: nowrap;
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+
+.user_nickname{
+	line-height: 40px;
+    font-size: 24px;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+}
+
+.profile_flag {
+    vertical-align: middle;
+    width: 16px;
+    height: 11px;
+}
+
+.profile_header .playerAvatar.profile_header_size {
+    float: left;
+    margin-right: 18px;
+}
+
+.playerAvatar.profile_header_size {
+    position: relative;
+    width: 166px;
+    height: 166px;
+}
+
+.playerAvatar .profile_avatar_frame {
+    border: 10px solid;
+	border-color: white;
+	border-style: ridge;
+    position: absolute;
+    width: 94%;
+    height: 94%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+img.profile_avatar {
+    width: 166px;
+    height: 166px;
+}
+
+.profile_header .persona_name {
+	line-height: 40px;
+	font-size: 24px;
+	color: #ffffff;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: 200; /* thin */
+
+}
+
+.profile_header_badgeinfo .user_level {
+	line-height: 40px;
+	margin-bottom: 13px;
+}
+
+.profile_header_badgeinfo .persona_level .friendPlayerLevel {
+	vertical-align: middle;
+}
+
+.chosen_badge {
+    position: relative;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+	border-radius: 3px;
+    background-color: rgba( 0, 0, 0, 0.3 );
+}
+
+.profile_header_badgeinfo {
+    float: right;
+}
+
+.profile_header_badgeinfo_badge_area {
+    width: 268px;
+}
+
+.profile_header_badgeinfo .user_level {
+    line-height: 40px;
+    margin-bottom: 13px;
+	font-size: 24px;
+	color: #f6f4f4;
+}
+
+.profile_header_badgeinfo .user_level .level_100 {
+	border: 1px solid red;
+    height: 40px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 40px;
+}
+
+.profile_header_badgeinfo .user_level .level_100 .levelNum {
+    color: #ffffff;
+}
+
+
+
+.profile_header_badge {
+    height: 70px;
+}
+
+.profile_header_summary {
+    overflow: hidden;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.profile_header .user_nickname {
+    line-height: 40px;
+    font-size: 24px;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+}
+
+.header_real_name_spacer {
+    height: 52px;
+}
+
+.profile_header .profile_summary {
+    line-height: 18px;
+    height: 57px;
+    overflow: hidden;
+    margin-bottom: 8px;
+	padding-left: 3px;
+}
+
+.badge_description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+	height: 30px;
+	padding-left: 4px;
+	color: white;
+}
+
+/*Comment area*/
+
+.profile_comment_area {
+	position: relative;
+    padding: 12px 12px 64px 12px;
+    font-size: 13px;
+}
+
+.profile_comment_area .commentsection_header {
+    border-bottom: none;
+    padding: 6px 10px;
+    line-height: 26px;
+    border-radius: 3px;
+    backdrop-filter: blur(20px);
+    background-color: rgba( 0, 0, 0, 0.3 );
+}
+
+.profile_comment_area .commentsection_header .commentsection_upper_border {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+    background: none;
+    padding-left: 0px;
+    font-size: 20px;
+	color: #bcb9b9;
+}
+
+.profile_comment_area .commentsection_header .commentsection_uper_border .commentsection_header_laber {
+	margin-right: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.profile_comment_area .commentsection_comment_container {
+	margin-top: 19px;
+}
+
+.commentsection_comment {
+    position: relative;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    min-height: 40px;
+    padding-left: 58px;
+    overflow: hidden;
+}
+
+img.guest_avatar{
+		background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
+		background: linear-gradient( to bottom, #515151 5%, #474747 95%);
+		position: absolute;
+		left: 5px;
+		top: 8px;
+		width: 34px;
+		height: 34px;
+		max-height: 36px;
+		max-width: 36px;
+		border-radius: 0;
+		padding: 1px;
+}
+
+.commentsection_comment_author {
+    margin-bottom: 2px;
+    line-height: 16px;
+	font-size: 14px;
+	   color: #ebebeb;
+}
+
+.commentsection_comment_timestamp {
+    font-size: 11px;
+    color: #56707f;
+    margin-left: 4px;
+}
+
+.commentsection_comment_text {
+    font-size: 13px;
+    color: #acb2b8;
+    word-wrap: break-word;
+    overflow-y: auto;
+    max-height: 400px;
+    line-height: 18px;
+}
