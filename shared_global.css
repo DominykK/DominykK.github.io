@@ -184,7 +184,7 @@
 	text-shadow: 1px 1px #1a1a1a;
 }	
 
-.friendPlayerLevel.lvl_10 { background-image: url( 'levels_hexagons.png' ); }
+.friendPlayerLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
 .friendPlayerLevel.lvl_20 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_wings.png' );  }
 .friendPlayerLevel.lvl_30 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_arrows.png' );  }
 .friendPlayerLevel.lvl_40 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_crystals.png' );  }
