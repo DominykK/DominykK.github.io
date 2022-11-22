@@ -185,8 +185,8 @@
 	text-shadow: 1px 1px #1a1a1a;
 }	
 
-.friendPlayerLevel.lvl_10 { background-image: url( 'Hexagon.png' ); background-size: 32px 32px }
-.friendPlayerLevel.lvl_20 { background-image: url( 'Star.png' ); background-size: 32px 32px;  }
+.friendPlayerLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
+.friendPlayerLevel.lvl_20 { background-image: url( 'Star.png' ); }
 .friendPlayerLevel.lvl_30 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_arrows.png' );  }
 .friendPlayerLevel.lvl_40 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_crystals.png' );  }
 .friendPlayerLevel.lvl_50 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_spiro_1-2.png?v=2' );  }
