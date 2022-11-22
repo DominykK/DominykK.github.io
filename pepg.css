@@ -1,0 +1,456 @@
+/*skin_1*/
+body.DefaultTheme {
+	--gradient-right: rgba(109, 38, 44, 0.301);
+	--gradient-left: rgba(50, 255, 193, 0.103);
+	--gradient-background: rgba(34, 35, 48, 0.93);
+	--gradient-background-right: rgba(109, 38, 44, 0);
+	--gradient-background-left: rgba(50, 255, 193, 0.103);
+	--color-showcase-header: rgba(43, 45, 68, 0.93);
+	--gradient-showcase-header-left: rgba(115, 173, 184, 0.247);
+	--btn-background:rgba(43, 52, 68);
+	--btn-background-hover:rgb(53, 62, 78);
+	--btn-outline:rgb(93, 102, 118);
+}
+
+.profile_content {
+	position: relative;
+	padding: 12px 12px 64px 12px;
+	width: 952px;
+	margin: 0 auto;
+
+	font-size: 13px;
+
+	min-height: calc( 100vh - 511px );
+	color: #d5d3d3; /*blue text poro*/
+}
+
+
+.profile_content_inner {
+	position: relative;
+}
+
+.profile_leftcol {
+	width: 652px;
+	float: left;
+}
+
+.profile_rightcol {
+	background-color: #101214;
+	background-color: rgba( 0, 0, 0, 0.3 );
+	backdrop-filter: blur(20px);
+	padding: 10px;
+	border-radius: 3px;
+	width: 268px;
+	float: right;
+}
+
+@media screen and (max-width: 910px)
+{
+	html.responsive .profile_rightcol {
+		float: none;
+		width: auto;
+	}
+
+	html.responsive .profile_leftcol {
+		float: none;
+		width: auto;
+	}
+
+	html.responsive .profile_content {
+        width: auto;
+        font-size: inherit;
+    }
+
+    html.responsive .profile_count_link_preview_ctn .profile_count_link {
+        background: transparent;
+        margin: 0;
+		width: auto;
+		float: none;
+		padding: 0;
+		margin-bottom: 8px;
+    }
+
+	html.responsive .profile_count_link_preview > div {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	html.responsive .profile_badges_badge,
+	html.responsive .profile_badges_badge img {
+		width: 36px;
+		height: 36px;
+	}
+
+	html.responsive .profile_badges_badge {
+		margin-right: 6px;
+	}
+
+}
+
+@media screen and ( max-width: 700px )
+{
+	html.responsive .profile_header_summary {
+		clear: both;
+		padding: 8px;
+	}
+	
+	html.responsive .profile_header .profile_summary.noexpand {
+		height: auto;
+	}
+
+	html.responsive .profile_header .profile_header_centered_persona {
+		position: static;
+		padding-bottom: 18px;
+	}
+
+	html.responsive .profile_header .profile_header_summary .persona_name_spacer,
+	html.responsive .profile_header .profile_header_summary .header_real_name_spacer {
+		display: none;
+	}
+
+	html.responsive .profile_header .header_real_name {
+		height: auto;
+		line-height: 24px;
+	}
+
+	html.responsive .profile_header {
+		padding-top: 8px;
+	}
+}
+
+@media screen and (max-width: 910px)
+{
+	html.responsive div.profile_page {
+		min-width: 0;
+	}
+
+	html.responsive .profile_header_bg {
+		min-width: 0;
+	}
+
+	html.responsive .profile_header {
+		width: auto;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	html.responsive .profile_content.has_profile_background {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+
+	html.responsive .profile_background_holder_content {
+		min-width: 0;
+	}
+
+	html.responsive .profile_leftcol {
+		padding: 0 1%;
+	}
+
+	html.responsive .profile_rightcol {
+		padding: 0 1%;
+	}
+
+	html.responsive .profile_summary_modal {
+		line-height: normal;
+	}
+
+
+	/* friends page */
+	html.responsive body.migrated_profile_page #BG_bottom.maincontent {
+		width: auto;
+		margin: 0 1%;
+	}
+
+	html.responsive .profile_subpage_column .maincontent {
+		width: auto;
+		margin: 0;
+		padding: 0 1%;
+	}
+
+	html.responsive .profile_subpage_general .maincontent {
+		width: auto;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	html.responsive .graytab_body_wrapper {
+		width: auto;
+	}
+
+	html.responsive .profile_background_image_content {
+		background-position: center top;
+		background-size: 115% auto;
+		background-attachment: fixed;
+	}
+
+	html.responsive .profile_background_overlay_content {
+		opacity: .65;
+		filter: alpha(opacity=65);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+	}
+
+	html.responsive .profile_small_header_avatar {
+		left: 3%;
+	}
+
+	html.responsive .profile_small_header_text {
+		left: 3%;
+		padding-left: calc( 68px + 3% );
+		right: 32px;	/* need to avoid right menu hamburger on profile subpages */
+	}
+
+	html.responsive .responsive_status_info {
+		padding: 8px;
+		background: rgba( 0, 0, 0, 0.5 );
+		margin: 12px 0;
+	}
+
+	html.responsive .responsive_status_info .profile_in_game {
+		margin: 0;
+	}
+	html.responsive .responsive_status_info .profile_in_game_name,
+	html.responsive .responsive_status_info .profile_ban_status,
+	html.responsive .responsive_status_info .profile_in_game_broadcastpreview,
+	html.responsive .responsive_status_info .profile_in_game_joingame {
+		margin-top: 8px;
+		margin-bottom: 0;
+	}
+	html.responsive .responsive_status_info .profile_ban_status {
+		margin-top: 12px;
+	}
+
+	html.responsive .responsive_count_link_area {
+		margin: 0 -4px;
+	}
+
+	html.responsive .profile_count_link_preview {
+		overflow: hidden;
+		line-height: 44px;
+		height: 44px;
+	}
+
+	html.responsive .profile_count_link,
+	html.responsive .profile_count_link_preview_ctn {
+		background: rgba( 0, 0, 0, 0.5 );
+		display: block;
+		float: left;
+		padding: 8px;
+		margin: 0 4px 4px 4px;
+		height: 29px;
+	}
+
+	html.responsive .profile_count_link_total {
+		font-size: 20px;
+	}
+
+	html.responsive .profile_count_link_preview_ctn {
+		height: 78px;
+		overflow: hidden;
+	}
+
+	html.responsive .profile_badges {
+		margin-bottom: 0;
+	}
+
+	html.responsive .profile_item_links {
+		margin-bottom: 12px;
+	}
+
+	html.responsive .profile_group > *:not(.profile_group_avatar),
+	html.responsive .profile_topfriends .friendBlock > div:not(.playerAvatar) {
+		display: none;
+	}
+
+	html.responsive .profile_group.profile_primary_group,
+	html.responsive .profile_group,
+	html.responsive .profile_topfriends .friendBlock {
+		padding: 0;
+		margin: 0;
+		height: auto;
+		width: auto;
+		margin-right: 6px;
+	}
+
+	html.responsive .profile_topfriends .friendBlock .playerAvatar {
+		margin: 0;
+		float: none;
+	}
+
+	html.responsive .profile_primary_group .profile_group_avatar,
+	html.responsive .profile_primary_group .profile_group_avatar img {
+		width: 32px;
+		height: 32px;
+	}
+
+	html.responsive .profile_group_avatar {
+		position: static;
+	}
+}
+
+@media screen and (min-width: 661px) and (max-width: 910px) {
+	html.responsive .profile_count_link,
+	html.responsive .profile_count_link_preview_ctn {
+		width: calc( 25% - 16px - 8px );
+	}
+}
+
+@media screen and (min-width: 521px) and ( max-width: 660px ) {
+
+	html.responsive .profile_count_link,
+	html.responsive .profile_count_link_preview_ctn  {
+		width: calc( 33% - 16px - 8px );
+	}
+}
+
+/*all about games*/
+.profile_recentgame_header {
+	margin-bottom: 8px;
+}
+
+.recentgame_quicklinks {
+	float: right;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+
+.recent_game {
+	backdrop-filter: blur(20px);
+	background-color: rgba( 0, 0, 0, 0.3 );
+	border-radius: 3px;
+	margin-bottom: 21px;
+}
+
+.recent_game_content {
+	padding: 8px 10px;
+}
+
+.recent_game .game_info {
+	position: relative;
+	height: 69px;
+}
+
+.recent_game .game_info .game_info_cap {
+	float: left;
+	margin-right: 8px;
+	width: 184px;
+	max-width: 33%;
+}
+
+.recent_game .game_info .game_info_cap img {
+	width: 100%;
+}
+
+.recent_game .game_info .game_info_details {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+	color:grey;
+}
+
+.recent_game .game_info .game_name {
+	padding-top: 10px;
+	font-size: 14px;
+	color: white;
+}
+
+.profile_count_link {
+	font-size: 14px;
+	margin-bottom: 4px;
+	min-height: 29px;
+}
+
+/*games, badges reviews groups friends count*/
+.profile_count_link_total {
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 200; /* thin */
+
+			color: #9b9b9b;
+	font-size: 24px;
+}
+
+/*offline/online*/
+.profile_in_game {
+	margin-bottom: 32px;
+}
+
+.profile_in_game_header {
+			font-family: "Motiva Sans", Sans-serif;
+		font-weight: 200; /* thin */
+
+			font-size: 20px;
+}
+
+/*badges*/
+.profile_badges_badge, .profile_badges_badge img {
+	width: 54px;
+	height: 54px;
+}
+.profile_badges_badge {
+	float: left;
+	margin-right: 16px;
+}
+.profile_badges_badge.last {
+	margin-right: 0;
+}
+
+.profile_badges, .profile_item_links, .profile_group_links {
+	margin-bottom: 40px;
+}
+
+/*groups*/
+.profile_group {
+	position: relative;
+
+	word-wrap: break-word;
+	overflow: hidden;
+
+	padding-top: 1px;
+	padding-left: 42px;
+	height: 36px;
+
+}
+
+.profile_group.profile_primary_group {
+	padding-top: 10px;
+	padding-left: 80px;
+	height: 60px;
+
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.profile_group_avatar {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	box-shadow: 2px 2px 3px #0c0c0c;
+
+	width: 32px;
+	height: 32px;
+}
+
+.profile_group_avatar img {
+	border-radius: 2px;
+}
+
+.profile_comment_area .commentthread_header, .profile_leftcol_header {
+	border-bottom: none;
+	padding: 6px 10px;
+	line-height: 26px;
+	border-radius: 3px;
+	backdrop-filter: blur(20px);
+	background-color: rgba( 0, 0, 0, 0.3 );
+}
+
+.profile_leftcol_header h2 {
+	float: left;
+	color: #989191;
+	font-weight: 200;
+}

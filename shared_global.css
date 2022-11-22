@@ -1,0 +1,201 @@
+/* Avatars */
+.playerAvatar,
+.friend_block_avatar {
+	width: 34px;
+	height: 34px;
+	position: relative;
+	border-radius: 0;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.playerAvatar.offline,
+.friend_block_holder.friend_status_offline .friend_block_avatar,
+.friend_activity.friend_status_offline .friend_block_avatar,
+.avatar_block_status_offline {
+
+	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
+	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
+	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
+	filter: none;
+}
+
+.playerAvatar.offline img,
+.friend_status_offline .friend_block_avatar img,
+.avatar_block_status_offline img {
+	background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
+	background: linear-gradient( to bottom, #515151 5%, #474747 95%);
+}
+
+.playerAvatar.online, .guest_avatar.online,
+.friend_block_holder.friend_status_online .friend_block_avatar,
+.friend_activity.friend_status_online .friend_block_avatar,
+.avatar_block_status_online {
+
+	background: -webkit-linear-gradient( top, rgb(83, 196, 83) 5%, rgb(12, 87, 46) 95%);
+	background: linear-gradient( to bottom, rgb(83, 196, 92) 5%, rgb(12, 87, 46) 95%);
+	filter: none;
+}
+
+.playerAvatar img,
+.friend_block_holder .friend_block_avatar img,
+.friend_activity .friend_block_avatar img {
+	width: 32px;
+	height: 32px;
+	padding: 1px;
+	border-radius: 0;
+	border: none;
+}
+
+.playerAvatar .profile_avatar_frame {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.playerAvatar .profile_avatar_frame > img {
+	transform: scale(1.23);
+	width: 32px;
+	height: 32px;
+	background: none;
+}
+
+.playerAvatar.full {
+	width: 186px;
+	height: 186px;
+}
+
+.playerAvatar.full img {
+	width: 184px;
+	height: 184px;
+}
+
+.playerAvatar.tiny {
+	width: 24px;
+	height: 24px;
+}
+
+.playerAvatar.tiny img {
+	width: 22px;
+	height: 22px;
+}
+
+.playerAvatar_friendindicator {
+	position: absolute;
+	left: 26px;
+	top: 23px;
+	background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/friendindicator_small.png' );
+	width: 20px;
+	height: 20px;
+	z-index: 2;
+
+	cursor: pointer;
+}
+
+.persona,
+.friend_status_offline, .friend_status_offline div {
+	color:#898989;
+}
+
+.persona.online,
+.friend_status_online, .friend_status_online div {
+	color:#90ba3c;
+}
+
+.border_color_offline {
+	border-color:#898989;
+}
+
+.border_color_online {
+	border-color:#90ba3c;
+}
+
+.friendPlayerLevel {
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 16px;
+	border: solid white 2px;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	text-align: center;
+
+	cursor: default;
+}
+
+
+.friendPlayerLevel .friendPlayerLevelNum {
+	color: #e5e5e5;
+}
+
+.friendPlayerLevel.lvl_0 {
+	border-color: #9b9b9b;
+}
+
+.friendPlayerLevel.lvl_1 {
+	border-color: #c02942;
+}
+
+.friendPlayerLevel.lvl_2 {
+	border-color: #d95b43;
+}
+
+.friendPlayerLevel.lvl_3 {
+	border-color: #fecc23;
+}
+
+.friendPlayerLevel.lvl_4 {
+	border-color: #467a3c;
+}
+
+.friendPlayerLevel.lvl_5 {
+	border-color: #4e8ddb;
+}
+
+.friendPlayerLevel.lvl_6 {
+	border-color: #7652c9;
+}
+
+.friendPlayerLevel.lvl_7 {
+	border-color: #c252c9;
+}
+
+.friendPlayerLevel.lvl_8 {
+	border-color: #542437;
+}
+
+.friendPlayerLevel.lvl_9 {
+	border-color: #997c52;
+}
+
+.friendPlayerLevel.lvl_10, .friendPlayerLevel.lvl_20,
+	.friendPlayerLevel.lvl_30, .friendPlayerLevel.lvl_40,
+	.friendPlayerLevel.lvl_50, .friendPlayerLevel.lvl_75,
+	.friendPlayerLevel.lvl_100
+{
+	border: none;
+	border-radius: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	font-size: 14px;
+
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	text-shadow: 1px 1px #1a1a1a;
+}
+
+.friendPlayerLevel.lvl_10 { background-image: url('Hegaxon.png'); }
+.friendPlayerLevel.lvl_20 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_wings.png' );  }
+.friendPlayerLevel.lvl_30 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_arrows.png' );  }
+.friendPlayerLevel.lvl_40 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_crystals.png' );  }
+.friendPlayerLevel.lvl_50 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_spiro_1-2.png?v=2' );  }
+.friendPlayerLevel.lvl_75 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_spiro_3-4.png?v=2' );  }
+.friendPlayerLevel.lvl_100 { background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/community/levels_halftone_2.png?v=2' );  }
