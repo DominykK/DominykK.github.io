@@ -1,17 +1,3 @@
-/*skin_1*/
-body.DefaultTheme {
-	--gradient-right: rgba(109, 38, 44, 0.301);
-	--gradient-left: rgba(50, 255, 193, 0.103);
-	--gradient-background: rgba(34, 35, 48, 0.93);
-	--gradient-background-right: rgba(109, 38, 44, 0);
-	--gradient-background-left: rgba(50, 255, 193, 0.103);
-	--color-showcase-header: rgba(43, 45, 68, 0.93);
-	--gradient-showcase-header-left: rgba(115, 173, 184, 0.247);
-	--btn-background:rgba(43, 52, 68);
-	--btn-background-hover:rgb(53, 62, 78);
-	--btn-outline:rgb(93, 102, 118);
-}
-
 .profile_content {
 	position: relative;
 	padding: 12px 12px 64px 12px;
@@ -21,7 +7,7 @@ body.DefaultTheme {
 	font-size: 13px;
 
 	min-height: calc( 100vh - 511px );
-	color: #d5d3d3; /*blue text poro*/
+	color: #d4d5d3;
 }
 
 
@@ -29,12 +15,12 @@ body.DefaultTheme {
 	position: relative;
 }
 
-.profile_leftcol {
+.profile_leftcollumn {
 	width: 652px;
 	float: left;
 }
 
-.profile_rightcol {
+.profile_rightcollumn {
 	background-color: #101214;
 	background-color: rgba( 0, 0, 0, 0.3 );
 	backdrop-filter: blur(20px);
@@ -46,12 +32,12 @@ body.DefaultTheme {
 
 @media screen and (max-width: 910px)
 {
-	html.responsive .profile_rightcol {
+	html.responsive .profile_rightcollumn {
 		float: none;
 		width: auto;
 	}
 
-	html.responsive .profile_leftcol {
+	html.responsive .profile_leftcollumn {
 		float: none;
 		width: auto;
 	}
@@ -61,7 +47,7 @@ body.DefaultTheme {
         font-size: inherit;
     }
 
-    html.responsive .profile_count_link_preview_ctn .profile_count_link {
+    html.responsive .profile_preview .profile_elements {
         background: transparent;
         margin: 0;
 		width: auto;
@@ -70,7 +56,7 @@ body.DefaultTheme {
 		margin-bottom: 8px;
     }
 
-	html.responsive .profile_count_link_preview > div {
+	html.responsive .profile_element_ovf > div {
 		float: none;
 		display: inline-block;
 		vertical-align: middle;
@@ -95,23 +81,21 @@ body.DefaultTheme {
 		padding: 8px;
 	}
 	
-	html.responsive .profile_header .profile_summary.noexpand {
+	html.responsive .profile_header .profile_summary {
 		height: auto;
 	}
 
-	html.responsive .profile_header .profile_header_centered_persona {
+	html.responsive .profile_header .profile_header_user {
 		position: static;
 		padding-bottom: 18px;
 	}
 
-	html.responsive .profile_header .profile_header_summary .persona_name_spacer,
 	html.responsive .profile_header .profile_header_summary .header_real_name_spacer {
 		display: none;
 	}
 
-	html.responsive .profile_header .header_real_name {
-		height: auto;
-		line-height: 24px;
+	html.responsive .header_nickname_spacer {
+		display: none;
 	}
 
 	html.responsive .profile_header {
@@ -121,14 +105,6 @@ body.DefaultTheme {
 
 @media screen and (max-width: 910px)
 {
-	html.responsive div.profile_page {
-		min-width: 0;
-	}
-
-	html.responsive .profile_header_bg {
-		min-width: 0;
-	}
-
 	html.responsive .profile_header {
 		width: auto;
 		padding-left: 8px;
@@ -145,11 +121,11 @@ body.DefaultTheme {
 		min-width: 0;
 	}
 
-	html.responsive .profile_leftcol {
+	html.responsive .profile_leftcollumn {
 		padding: 0 1%;
 	}
 
-	html.responsive .profile_rightcol {
+	html.responsive .profile_rightcollumn {
 		padding: 0 1%;
 	}
 
@@ -199,41 +175,27 @@ body.DefaultTheme {
 	html.responsive .profile_small_header_text {
 		left: 3%;
 		padding-left: calc( 68px + 3% );
-		right: 32px;	/* need to avoid right menu hamburger on profile subpages */
+		right: 32px;
 	}
 
-	html.responsive .responsive_status_info {
+	html.responsive .status_information {
 		padding: 8px;
 		background: rgba( 0, 0, 0, 0.5 );
 		margin: 12px 0;
 	}
 
-	html.responsive .responsive_status_info .profile_in_game {
+	html.responsive .status_information .status {
 		margin: 0;
 	}
-	html.responsive .responsive_status_info .profile_in_game_name,
-	html.responsive .responsive_status_info .profile_ban_status,
-	html.responsive .responsive_status_info .profile_in_game_broadcastpreview,
-	html.responsive .responsive_status_info .profile_in_game_joingame {
-		margin-top: 8px;
-		margin-bottom: 0;
-	}
-	html.responsive .responsive_status_info .profile_ban_status {
-		margin-top: 12px;
-	}
 
-	html.responsive .responsive_count_link_area {
-		margin: 0 -4px;
-	}
-
-	html.responsive .profile_count_link_preview {
+	html.responsive .profile_element_ovf {
 		overflow: hidden;
 		line-height: 44px;
 		height: 44px;
 	}
 
-	html.responsive .profile_count_link,
-	html.responsive .profile_count_link_preview_ctn {
+	html.responsive .profile_elements,
+	html.responsive .profile_preview {
 		background: rgba( 0, 0, 0, 0.5 );
 		display: block;
 		float: left;
@@ -242,11 +204,11 @@ body.DefaultTheme {
 		height: 29px;
 	}
 
-	html.responsive .profile_count_link_total {
+	html.responsive .count_total {
 		font-size: 20px;
 	}
 
-	html.responsive .profile_count_link_preview_ctn {
+	html.responsive .profile_preview {
 		height: 78px;
 		overflow: hidden;
 	}
@@ -255,18 +217,18 @@ body.DefaultTheme {
 		margin-bottom: 0;
 	}
 
-	html.responsive .profile_item_links {
+	html.responsive .profile__items {
 		margin-bottom: 12px;
 	}
 
 	html.responsive .profile_group > *:not(.profile_group_avatar),
-	html.responsive .profile_topfriends .friendBlock > div:not(.playerAvatar) {
+	html.responsive .profile_friendlist .friend > div:not(.userAvatar) {
 		display: none;
 	}
 
 	html.responsive .profile_group.profile_primary_group,
 	html.responsive .profile_group,
-	html.responsive .profile_topfriends .friendBlock {
+	html.responsive .profile_friendlist .friend {
 		padding: 0;
 		margin: 0;
 		height: auto;
@@ -274,7 +236,7 @@ body.DefaultTheme {
 		margin-right: 6px;
 	}
 
-	html.responsive .profile_topfriends .friendBlock .playerAvatar {
+	html.responsive .profile_friendlist .friend .userAvatar {
 		margin: 0;
 		float: none;
 	}
@@ -291,16 +253,16 @@ body.DefaultTheme {
 }
 
 @media screen and (min-width: 661px) and (max-width: 910px) {
-	html.responsive .profile_count_link,
-	html.responsive .profile_count_link_preview_ctn {
+	html.responsive .profile_elements,
+	html.responsive .profile_preview {
 		width: calc( 25% - 16px - 8px );
 	}
 }
 
 @media screen and (min-width: 521px) and ( max-width: 660px ) {
 
-	html.responsive .profile_count_link,
-	html.responsive .profile_count_link_preview_ctn  {
+	html.responsive .profile_elements,
+	html.responsive .profile_preview  {
 		width: calc( 33% - 16px - 8px );
 	}
 }
@@ -310,7 +272,7 @@ body.DefaultTheme {
 	margin-bottom: 8px;
 }
 
-.recentgame_quicklinks {
+.recentactivity {
 	float: right;
 	display: flex;
 	gap: 8px;
@@ -329,23 +291,24 @@ body.DefaultTheme {
 	padding: 8px 10px;
 }
 
-.recent_game .game_info {
+.recent_game .game_information {
 	position: relative;
 	height: 69px;
 }
 
-.recent_game .game_info .game_info_cap {
+.recent_game .game_information .game_information_img {
 	float: left;
 	margin-right: 8px;
 	width: 184px;
-	max-width: 33%;
+	height: 69px;
 }
 
-.recent_game .game_info .game_info_cap img {
+.recent_game .game_information .game_information_img img {
 	width: 100%;
+	height: 100%;
 }
 
-.recent_game .game_info .game_info_details {
+.recent_game .game_information .game_information_details {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -353,33 +316,33 @@ body.DefaultTheme {
 	color:grey;
 }
 
-.recent_game .game_info .game_name {
+.recent_game .game_information .game_name {
 	padding-top: 10px;
 	font-size: 14px;
 	color: white;
 }
 
-.profile_count_link {
+.profile_elements {
 	font-size: 14px;
 	margin-bottom: 4px;
 	min-height: 29px;
 }
 
 /*games, badges reviews groups friends count*/
-.profile_count_link_total {
-			font-family: "Motiva Sans", Sans-serif;
-		font-weight: 200; /* thin */
+.profile_elements .count_total {
+			font-family: Sans-serif;
+		font-weight: 200;
 
 			color: #9b9b9b;
 	font-size: 24px;
 }
 
 /*offline/online*/
-.profile_in_game {
+.status {
 	margin-bottom: 32px;
 }
 
-.profile_in_game_header {
+.status_header {
 			font-family: "Motiva Sans", Sans-serif;
 		font-weight: 200; /* thin */
 
@@ -399,7 +362,7 @@ body.DefaultTheme {
 	margin-right: 0;
 }
 
-.profile_badges, .profile_item_links, .profile_group_links {
+.profile_badges, .profile_items, .profile_groups {
 	margin-bottom: 40px;
 }
 
@@ -438,19 +401,6 @@ body.DefaultTheme {
 
 .profile_group_avatar img {
 	border-radius: 2px;
-}
-
-.profile_comment_area .commentthread_header, .profile_leftcol_header {
-	border-bottom: none;
-	padding: 6px 10px;
-	line-height: 26px;
-	border-radius: 3px;
-	backdrop-filter: blur(20px);
-	background-color: rgba( 0, 0, 0, 0.3 );
-}
-
-.profile_leftcol_header h2 {
-	float: left;
-	color: #989191;
-	font-weight: 200;
+	width: 100%;
+	height: 100%;
 }

@@ -1,49 +1,23 @@
-/* Avatars */
-.playerAvatar,
-.friend_block_avatar {
+.userAvatar {
 	width: 34px;
 	height: 34px;
 	position: relative;
 	border-radius: 0;
 }
 
-.ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.playerAvatar.offline,
-.friend_block_holder.friend_status_offline .friend_block_avatar,
-.friend_activity.friend_status_offline .friend_block_avatar,
-.avatar_block_status_offline {
+.userAvatar.offline {
 
 	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
-	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
-	filter: none;
 }
 
-.playerAvatar.offline img,
-.friend_status_offline .friend_block_avatar img,
-.avatar_block_status_offline img {
-	background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
-	background: linear-gradient( to bottom, #515151 5%, #474747 95%);
-}
-
-.playerAvatar.online, .guest_avatar.online,
-.friend_block_holder.friend_status_online .friend_block_avatar,
-.friend_activity.friend_status_online .friend_block_avatar,
-.avatar_block_status_online {
+.userAvatar.online, .guest_avatar.online {
 
 	background: -webkit-linear-gradient( top, rgb(83, 196, 83) 5%, rgb(12, 87, 46) 95%);
 	background: linear-gradient( to bottom, rgb(83, 196, 92) 5%, rgb(12, 87, 46) 95%);
-	filter: none;
 }
 
-.playerAvatar img,
-.friend_block_holder .friend_block_avatar img,
-.friend_activity .friend_block_avatar img {
+.userAvatar img {
 	width: 32px;
 	height: 32px;
 	padding: 1px;
@@ -51,64 +25,24 @@
 	border: none;
 }
 
-.playerAvatar .profile_avatar_frame > img {
+.userAvatar .profile_avatar_frame > img {
 	transform: scale(1.23);
 	width: 32px;
 	height: 32px;
 	background: none;
 }
 
-.playerAvatar.full {
-	width: 186px;
-	height: 186px;
-}
-
-.playerAvatar.full img {
-	width: 184px;
-	height: 184px;
-}
-
-.playerAvatar.tiny {
-	width: 24px;
-	height: 24px;
-}
-
-.playerAvatar.tiny img {
-	width: 22px;
-	height: 22px;
-}
-
-.playerAvatar_friendindicator {
-	position: absolute;
-	left: 26px;
-	top: 23px;
-	background-image: url( 'https://community.cloudflare.steamstatic.com/public/shared/images/friendindicator_small.png' );
-	width: 20px;
-	height: 20px;
-	z-index: 2;
-
-	cursor: pointer;
-}
-
-.persona,
-.friend_status_offline, .friend_status_offline div {
+.user {
 	color:#898989;
 }
 
-.persona.online,
-.friend_status_online, .friend_status_online div {
+.user.online, .friend.online {
 	color:#90ba3c;
 }
 
-.border_color_offline {
-	border-color:#898989;
-}
 
-.border_color_online {
-	border-color:#90ba3c;
-}
 
-.friendPlayerLevel {
+.userLevel {
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 16px;
@@ -122,54 +56,54 @@
 }
 
 
-.friendPlayerLevel .friendPlayerLevelNum {
+.userLevel .userLevelNum {
 	color: #e5e5e5;
 }
 
-.friendPlayerLevel.lvl_0 {
+.userLevel.lvl_0 {
 	border-color: #9b9b9b;
 }
 
-.friendPlayerLevel.lvl_1 {
+.userLevel.lvl_1 {
 	border-color: #c02942;
 }
 
-.friendPlayerLevel.lvl_2 {
+.userLevel.lvl_2 {
 	border-color: #d95b43;
 }
 
-.friendPlayerLevel.lvl_3 {
+.userLevel.lvl_3 {
 	border-color: #fecc23;
 }
 
-.friendPlayerLevel.lvl_4 {
+.userLevel.lvl_4 {
 	border-color: #467a3c;
 }
 
-.friendPlayerLevel.lvl_5 {
+.userLevel.lvl_5 {
 	border-color: #4e8ddb;
 }
 
-.friendPlayerLevel.lvl_6 {
+.userLevel.lvl_6 {
 	border-color: #7652c9;
 }
 
-.friendPlayerLevel.lvl_7 {
+.userLevel.lvl_7 {
 	border-color: #c252c9;
 }
 
-.friendPlayerLevel.lvl_8 {
+.userLevel.lvl_8 {
 	border-color: #542437;
 }
 
-.friendPlayerLevel.lvl_9 {
+.userLevel.lvl_9 {
 	border-color: #997c52;
 }
 
-.friendPlayerLevel.lvl_10, .friendPlayerLevel.lvl_20,
-	.friendPlayerLevel.lvl_30, .friendPlayerLevel.lvl_40,
-	.friendPlayerLevel.lvl_50, .friendPlayerLevel.lvl_75,
-	.friendPlayerLevel.lvl_100
+.userLevel.lvl_10, .userLevel.lvl_20,
+	.userLevel.lvl_30, .userLevel.lvl_40,
+	.userLevel.lvl_50, .userLevel.lvl_75,
+	.userLevel.lvl_100
 {
 	border: none;
 	border-radius: 0;
@@ -185,10 +119,10 @@
 	text-shadow: 1px 1px #1a1a1a;
 }	
 
-.friendPlayerLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
-.friendPlayerLevel.lvl_20 { background-image: url( 'Star.png' ); }
-.friendPlayerLevel.lvl_30 { background-image: url( 'Spiral.png' );  }
-.friendPlayerLevel.lvl_40 { background-image: url( 'Ruby.png' );  }
-.friendPlayerLevel.lvl_50 { background-image: url( 'Diamond.png' );  }
-.friendPlayerLevel.lvl_75 { background-image: url( 'Tesseract.png' );  }
-.friendPlayerLevel.lvl_100 { background-image: url( 'Cogwheel.png' );  }
+.userLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
+.userLevel.lvl_20 { background-image: url( 'Star.png' ); }
+.userLevel.lvl_30 { background-image: url( 'Spiral.png' );  }
+.userLevel.lvl_40 { background-image: url( 'Ruby.png' );  }
+.userLevel.lvl_50 { background-image: url( 'Diamond.png' );  }
+.userLevel.lvl_75 { background-image: url( 'Tesseract.png' );  }
+.userLevel.lvl_100 { background-image: url( 'Cogwheel.png' );  }
