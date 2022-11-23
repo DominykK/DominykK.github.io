@@ -87,14 +87,11 @@
 	border-radius: 0;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-
 	font-size: 14px;
-
 	background-size: 32px 32px;
 	height: 32px;
 	width: 32px;
 	line-height: 32px;
-	text-shadow: 1px 1px #1a1a1a;
 }	
 
 .userLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
