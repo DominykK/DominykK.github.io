@@ -82,8 +82,7 @@
 .userLevel.lvl_10, .userLevel.lvl_20,
 .userLevel.lvl_30, .userLevel.lvl_40,
 .userLevel.lvl_50, .userLevel.lvl_75,
-.userLevel.lvl_100
-{
+.userLevel.lvl_100 {
 	border: none;
 	border-radius: 0;
 	background-repeat: no-repeat;

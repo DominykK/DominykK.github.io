@@ -8,12 +8,11 @@ body {
     background-image: url( 'Doom.jpg');
 }
 
-h2{
+h2 {
 	margin: 0px;
 }
 
-.Name
-{
+.Name {
 	font-size: 14px;
 	color: white;
 }
@@ -306,10 +305,12 @@ img.guest_avatar{
 	width: 54px;
 	height: 54px;
 }
+
 .profile_badges_badge {
 	float: left;
 	margin-right: 16px;
 }
+
 .profile_badges_badge.last {
 	margin-right: 0;
 }
@@ -327,7 +328,6 @@ img.guest_avatar{
 	padding-top: 1px;
 	padding-left: 42px;
 	height: 36px;
-
 }
 
 .profile_group.profile_primary_group {
