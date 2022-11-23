@@ -85,10 +85,10 @@ img.profile_avatar {
 
 .chosen_badge {
     position: relative;
+    gap: 8px;
     padding: 8px 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
 }
 
 .profile_header_badgeinformation {
@@ -100,9 +100,9 @@ img.profile_avatar {
 }
 
 .profile_header_badgeinformation .user_level {
+    font-size: 24px;
     line-height: 40px;
     margin-bottom: 13px;
-    font-size: 24px;
 }
 
 .profile_header_badge {
@@ -110,16 +110,16 @@ img.profile_avatar {
 }
 
 .profile_header_summary {
+    padding-left: 18px;
     overflow: hidden;
     padding-right: 18px;
-    padding-left: 18px;
 }
 
 .profile_header .user_nickname {
+    font-weight: 200;
     line-height: 40px;
     font-size: 24px;
     color: #ffffff;
-    font-weight: 200;
 }
 
 .header_real_name_spacer {
@@ -131,11 +131,11 @@ img.profile_avatar {
 }
 
 .profile_header .profile_summary {
+    margin-bottom: 8px;
+    padding-left: 3px;
     line-height: 18px;
     height: 57px;
     overflow: hidden;
-    margin-bottom: 8px;
-    padding-left: 3px;
 }
 
 .badge_description {
@@ -151,12 +151,12 @@ img.profile_avatar {
 }
 
 .profile_comment_area .commentsection_header .commentsection_upper_border {
-    font-family: Sans-serif;
+    padding-left: 0px;
     font-weight: 200;
     background: none;
-    padding-left: 0px;
     font-size: 20px;
 	color: #bcb9b9;
+    font-family: Sans-serif;
 }
 
 .profile_comment_area .commentsection_header, .profile_leftcollumn_header {
@@ -186,15 +186,15 @@ img.profile_avatar {
 }
 
 img.guest_avatar{
-	position: absolute;
-	left: 5px;
-	top: 8px;
-	width: 34px;
-	height: 34px;
-	max-height: 36px;
 	max-width: 36px;
 	border-radius: 0;
 	padding: 1px;
+	height: 34px;
+	max-height: 36px;
+    position: absolute;
+	left: 5px;
+    top: 8px;
+	width: 34px;
 }
 
 .commentsection_comment_author {
@@ -210,12 +210,12 @@ img.guest_avatar{
 }
 
 .commentsection_comment_text {
+    line-height: 18px;
+    overflow-y: auto;
+    max-height: 400px;
     font-size: 13px;
     color: #acb2b8;
     word-wrap: break-word;
-    overflow-y: auto;
-    max-height: 400px;
-    line-height: 18px;
 }
 
 .profile_recentgame_header {
@@ -255,11 +255,11 @@ img.guest_avatar{
 }
 
 .recent_game .game_information .game_information_details {
-	position: absolute;
-	right: 0;
-	bottom: 0;
 	text-align: right;
 	color:grey;
+    position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 .recent_game .game_information .game_name {
@@ -274,10 +274,10 @@ img.guest_avatar{
 }
 
 .profile_elements .count_total {
-	font-family: Sans-serif;
+	font-size: 24px;
+    font-family: Sans-serif;
 	font-weight: 200;
 	color: #9b9b9b;
-	font-size: 24px;
 }
 
 .status {
@@ -310,19 +310,19 @@ img.guest_avatar{
 
 .profile_group {
 	position: relative;
-	word-wrap: break-word;
-	overflow: hidden;
 	padding-top: 1px;
 	padding-left: 42px;
 	height: 36px;
+    word-wrap: break-word;
+	overflow: hidden;
 }
 
 .profile_group_avatar {
 	position: absolute;
 	left: 0;
-	top: 0;
-	width: 32px;
 	height: 32px;
+    top: 0;
+	width: 32px;
 }
 
 .profile_group_avatar img {
@@ -332,13 +332,14 @@ img.guest_avatar{
 }
 
 .profile_content {
-	position: relative;
-	padding: 12px 12px 64px 12px;
+    font-size: 13px;
+	min-height: calc( 100vh - 511px );
 	width: 952px;
 	margin: 0 auto;
-	font-size: 13px;
-	min-height: calc( 100vh - 511px );
-	color: #d4d5d3;
+    color: #d4d5d3;
+	position: relative;
+	padding: 12px 12px 64px 12px;
+
 }
 
 .profile_content_inner {

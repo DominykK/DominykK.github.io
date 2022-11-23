@@ -15,10 +15,10 @@
 
 .userAvatar img {
 	width: 32px;
+	border: none;
 	height: 32px;
 	padding: 1px;
 	border-radius: 0;
-	border: none;
 }
 
 .userAvatar .profile_avatar_frame > img {
@@ -36,14 +36,14 @@
 }
 
 .friend {
-	height:36px;
-	padding: 4px 4px 6px 8px;
-	margin-bottom:4px;
-	font-size:11px;
 	line-height:13px;
 	position: relative;
 	border-radius: 3px;
 	background-color: rgba(54, 54, 54, 0.2);
+	margin-bottom:4px;
+	font-size:11px;
+	height:36px;
+	padding: 4px 4px 6px 8px;
 }
 
 .friend .userAvatar {
@@ -60,11 +60,11 @@
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 16px;
-	border: solid white 2px;
-	height: 28px;
-	width: 28px;
 	line-height: 28px;
 	text-align: center;
+	width: 28px;
+	border: solid white 2px;
+	height: 28px;
 }
 
 .userLevel .userLevelNum {
@@ -78,16 +78,16 @@
 .userLevel.lvl_10, .userLevel.lvl_20,
 .userLevel.lvl_30, .userLevel.lvl_40,
 .userLevel.lvl_50, .userLevel.lvl_75,
-.userLevel.lvl_100 {
-	border: none;
-	border-radius: 0;
+.userLevel.lvl_100 {	
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	font-size: 14px;
 	background-size: 32px 32px;
 	height: 32px;
 	width: 32px;
 	line-height: 32px;
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
 }	
 
 .userLevel.lvl_10 { 
