@@ -90,10 +90,30 @@
 	line-height: 32px;
 }	
 
-.userLevel.lvl_10 { background-image: url( 'Hexagon.png' ); }
-.userLevel.lvl_20 { background-image: url( 'Star.png' ); }
-.userLevel.lvl_30 { background-image: url( 'Spiral.png' );  }
-.userLevel.lvl_40 { background-image: url( 'Ruby.png' );  }
-.userLevel.lvl_50 { background-image: url( 'Diamond.png' );  }
-.userLevel.lvl_75 { background-image: url( 'Tesseract.png' );  }
-.userLevel.lvl_100 { background-image: url( 'Cogwheel.png' );  }
+.userLevel.lvl_10 { 
+	background-image: url( 'Hexagon.png' ); 
+
+}
+.userLevel.lvl_20 { 
+	background-image: url( 'Star.png' ); 
+}
+
+.userLevel.lvl_30 { 
+	background-image: url( 'Spiral.png' );  
+}
+
+.userLevel.lvl_40 { 
+	background-image: url( 'Ruby.png' );  
+}
+
+.userLevel.lvl_50 { 
+	background-image: url( 'Diamond.png' );  
+}
+
+.userLevel.lvl_75 { 
+	background-image: url( 'Tesseract.png' );  
+}
+
+.userLevel.lvl_100 { 
+	background-image: url( 'Cogwheel.png' );  
+}
