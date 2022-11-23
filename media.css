@@ -1,0 +1,156 @@
+@media screen and (max-width: 984px)
+{
+	html.responsive .profile_header {
+		width: auto;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	html.responsive .status_information {
+		padding: 8px;
+		background: rgba( 0, 0, 0, 0.5 );
+		margin: 12px 0;
+	}
+
+	html.responsive .status_information .status {
+		margin: 0;
+	}
+
+	html.responsive .profile_rightcollumn {
+		float: none;
+		width: auto;
+	}
+
+	html.responsive .profile_leftcollumn {
+		float: none;
+		width: auto;
+	}
+
+	html.responsive .profile_content {
+        width: auto;
+        font-size: inherit;
+    }
+
+    html.responsive .profile_preview .profile_elements {
+        background: transparent;
+        margin: 0;
+		width: auto;
+		float: none;
+		padding: 0;
+		margin-bottom: 8px;
+    }
+
+	html.responsive .profile_element_ovf > div {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	html.responsive .profile_badges_badge,
+	html.responsive .profile_badges_badge img {
+		width: 36px;
+		height: 36px;
+	}
+
+	html.responsive .profile_badges_badge {
+		margin-right: 6px;
+	}
+
+	html.responsive .profile_element_ovf {
+		overflow: hidden;
+		line-height: 44px;
+		height: 44px;
+	}
+
+	html.responsive .profile_elements,
+	html.responsive .profile_preview {
+		background: rgba( 0, 0, 0, 0.5 );
+		display: block;
+		float: left;
+		padding: 8px;
+		margin: 0 4px 4px 4px;
+		height: 29px;
+	}
+
+	html.responsive .profile_preview {
+		height: 78px;
+		overflow: hidden;
+	}
+
+	html.responsive .profile_badges {
+		margin-bottom: 0;
+	}
+
+	html.responsive .profile_group > *:not(.profile_group_avatar),
+	html.responsive .profile_friendlist .friend > div:not(.userAvatar) {
+		display: none;
+	}
+
+	html.responsive .profile_group,
+	html.responsive .profile_friendlist .friend {
+		padding: 0;
+		margin: 0;
+		height: auto;
+		width: auto;
+		margin-right: 6px;
+	}
+
+	html.responsive .profile_friendlist .friend .userAvatar {
+		margin: 0;
+	}
+
+	html.responsive .profile_group_avatar {
+		position: static;
+	}
+
+	html.responsive .profile_elements,
+	html.responsive .profile_preview {
+		width: calc( 25% - 16px - 8px );
+	}
+}
+
+@media screen and ( max-width: 700px )
+{
+	html.responsive .profile_header_summary {
+		clear: both;
+		padding: 8px;
+	}
+	
+	html.responsive .profile_header .profile_summary {
+		height: auto;
+	}
+
+	html.responsive .profile_header .profile_header_user {
+		position: static;
+		padding-bottom: 18px;
+	}
+
+	html.responsive .profile_header .profile_header_summary .header_real_name_spacer {
+		display: none;
+	}
+
+	html.responsive .header_nickname_spacer {
+		display: none;
+	}
+
+	html.responsive .profile_header {
+		padding-top: 8px;
+	}
+
+	html.responsive .profile_header_content {
+		padding-top: 0;
+	}
+
+	html.responsive .profile_header_badgeinformation {
+		float: none;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 520px) {
+
+	html.responsive .profile_elements,
+	html.responsive .profile_preview  {
+		width: calc( 50% - 16px - 8px );
+	}
+}

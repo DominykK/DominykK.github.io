@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html class="responsive">
 <head>
-    <link href="pepg.css" rel="stylesheet" type="text/css">
-    <link href="globalv2.css" rel="stylesheet" type="text/css">
-    <link href="shared_global.css" rel="stylesheet" type="text/css">
-     
+    <link href="media.css" rel="stylesheet" type="text/css">
+    <link href="user.css" rel="stylesheet" type="text/css">    	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
     <meta name="description" content="Project">
 	<meta name="author" content="Renat Furs & Dominykas Kozlovskis">
 	<meta charset="utf-8">
-	
-	 <link rel="stylesheet" type="text/css" href="styles.css"/>
+
 </head>
 
-
-    <body>
-        
-        <div class="profile_header_background">
-            <div class="profile_header_background_texture">
+    <body>        
+        <div>
+            <div class="profile_header_background_texture blur_background">
                 <div class="profile_header">
                     <div class="profile_header_content">
                         <div class="profile_header_user">
@@ -29,18 +26,18 @@
                                 <img class="profile_flag" src="LithuanianFlag.gif"> Lithuania
                             </div>												
                         </div>
-                        <div class="userAvatar profile_header_size">
+                        <div class="userAvatar frame">
                             <div class="profile_avatar_frame"></div>
                             <img src="profile_pic.jpg" class="profile_avatar">
                         </div>
-                        <div class="profile_header_badgeinfo">
-                            <div class="profile_header_badgeinfo_badge_area">
+                        <div class="profile_header_badgeinformation">
+                            <div class="profile_header_badgeinformation_badge_area">
                                 <div class="user_nickname user_level"> Level
                                     <div class="userLevel lvl_100">
                                         <span class="userLevelNum">100</span>
                                     </div>
                                 </div>
-                                <div class="chosen_badge">
+                                <div class="chosen_badge blur_background">
                                     <img class="profile_header_badge" src="badge.png">
                                     <div class="badge_description ellipsis">
                                         <div class="Name">The paranormal professor</div>
@@ -60,10 +57,10 @@
     
         <div class="profile_content">
             <div class="profile_content_inner">
-                <div class="profile_rightcollumn">
+                <div class="profile_rightcollumn blur_background">
                     <div class="status_information">
                         <div class="status user online">
-                            <div class="status_header">Offline</div>
+                            <div class="status_header">Online</div>
                         </div>
                     </div>
 
@@ -143,7 +140,7 @@
                         <div class="profile_friendlist profile_element_ovf">
                         
                             <div class="friend online">
-                                <div class="userLevel lvl_5">
+                                <div class="userLevel lvl_0">
                                     <span class="userLevelNum">5</span>
                                 </div>
                                 <div class="userAvatar online">
@@ -207,7 +204,7 @@
                 </div>    
                 
                 <div class="profile_leftcollumn">
-                    <div class="profile_recentgame_header profile_leftcollumn_header">
+                    <div class="profile_recentgame_header profile_leftcollumn_header blur_background">
                         <h2>Recent activity</h2>
                         <div class="recentactivity">
                             <h2>5.0 hours past 2 weeks</h2>
@@ -215,7 +212,7 @@
                         <div style="clear: both;"></div>
                     </div>
         
-                        <div class="recent_game">
+                        <div class="recent_game blur_background">
                             <div class="recent_game_content">
                                 <div class="game_information">
                                     <div class="game_information_img "><img src="Isaac.jpg"></div>
@@ -225,7 +222,7 @@
                             </div>
                         </div>
         
-                        <div class="recent_game">
+                        <div class="recent_game blur_background">
                             <div class="recent_game_content">
                                 <div class="game_information">
                                     <div class="game_information_img "><img src="Dota2.jpg"></div>
@@ -235,7 +232,7 @@
                             </div>
                         </div>
         
-                        <div class="recent_game">
+                        <div class="recent_game blur_background">
                             <div class="recent_game_content">
                                 <div class="game_information">
                                     <div class="game_information_img "><img src="Minecraft.jpg"></div>
@@ -245,8 +242,8 @@
                             </div>
                         </div>
                     
-                    <div class="profile_comment_area">
-                        <div class="commentsection_header">
+                    <div class="profile_comment_area blur_background">
+                        <div class="commentsection_header blur_background">
                             <div class="commentsection_upper_border">
                                 <span>Comments</span>
                             </div>
@@ -265,7 +262,7 @@
                                 </div>
                             </div>
                             <div class="commentsection_comment">
-                                <img src="guest_pic2.png" class="guest_avatar">
+                                <img src="guest_pic2.png" class="guest_avatar offline">
                                 <div>
                                     <div class="commentsection_comment_author">
                                         <bdi>MIF student 2</bdi>
@@ -277,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="commentsection_comment">
-                                <img src="guest_pic3.png" class="guest_avatar">
+                                <img src="guest_pic3.png" class="guest_avatar offline">
                                 <div>
                                     <div class="commentsection_comment_author">
                                         <bdi>MIF student 3</bdi>
@@ -289,7 +286,7 @@
                                 </div>
                             </div>
                             <div class="commentsection_comment">
-                                <img src="guest_pic4.png" class="guest_avatar">
+                                <img src="guest_pic4.png" class="guest_avatar offline">
                                 <div>
                                     <div class="commentsection_comment_author">
                                         <bdi>MIF student 4</bdi>
@@ -299,11 +296,12 @@
                                         BatChest
                                     </div>
                                 </div>
-                            </div>   
+                            </div>
                         </div>    
                     </div>
                 </div>       
             </div>
         </div>
     </body>
+
 </html>

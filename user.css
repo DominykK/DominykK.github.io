@@ -5,7 +5,7 @@
 	border-radius: 0;
 }
 
-.userAvatar.offline {
+.userAvatar.offline, .guest_avatar.offline {
 
 	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
@@ -26,7 +26,6 @@
 }
 
 .userAvatar .profile_avatar_frame > img {
-	transform: scale(1.23);
 	width: 32px;
 	height: 32px;
 	background: none;
@@ -40,6 +39,27 @@
 	color:#90ba3c;
 }
 
+.friend {
+	height:36px;
+	padding: 4px 4px 6px 8px;
+	margin-bottom:4px;
+	font-size:11px;
+	line-height:13px;
+	position: relative;
+	border-radius: 3px;
+	background-color: rgba(54, 54, 54, 0.2);
+}
+
+.friend .userAvatar {
+	float:left;
+	margin-right: 7px;
+}
+
+.friend .userLevel {
+	float: right;
+	margin: 4px 4px 0 0;
+}
+
 .userLevel {
 	display: inline-block;
 	font-size: 16px;
@@ -49,8 +69,6 @@
 	width: 28px;
 	line-height: 28px;
 	text-align: center;
-
-	cursor: default;
 }
 
 .userLevel .userLevelNum {
@@ -58,43 +76,7 @@
 }
 
 .userLevel.lvl_0 {
-	border-color: #9b9b9b;
-}
-
-.userLevel.lvl_1 {
-	border-color: #c02942;
-}
-
-.userLevel.lvl_2 {
-	border-color: #d95b43;
-}
-
-.userLevel.lvl_3 {
-	border-color: #fecc23;
-}
-
-.userLevel.lvl_4 {
-	border-color: #467a3c;
-}
-
-.userLevel.lvl_5 {
-	border-color: #4e8ddb;
-}
-
-.userLevel.lvl_6 {
-	border-color: #7652c9;
-}
-
-.userLevel.lvl_7 {
-	border-color: #c252c9;
-}
-
-.userLevel.lvl_8 {
-	border-color: #542437;
-}
-
-.userLevel.lvl_9 {
-	border-color: #997c52;
+	border-color: #000000;
 }
 
 .userLevel.lvl_10, .userLevel.lvl_20,

@@ -1,42 +1,33 @@
 body {
 	text-align: left;
     font-size: 14px;
-    background: linear-gradient(180deg, #262D33 -3.38%, #1D1E20 78.58%);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+    background-image: url( 'Doom.jpg');
 }
 
-.profile_background{
-	position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;	
+h2{
+	margin: 0px;
 }
 
-.profile_header_background {
-    position: relative;
-    max-width: 1018px;
-    min-height: 224px;
-    padding-bottom: 0px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+.Name
+{
+	font-size: 14px;
+	color: white;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .profile_header_background_texture {
     max-width: 976px;
     min-height: 224px;
     margin: 0 auto;
-    backdrop-filter: blur(20px);
-    background-color: rgba( 0, 0, 0, 0.3 );
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .profile_header{
@@ -69,7 +60,7 @@ body {
     height: 11px;
 }
 
-.profile_header .userAvatar.profile_header_size {
+.profile_header .userAvatar.frame {
     float: left;
     margin-right: 18px;
     position: relative;
@@ -91,12 +82,12 @@ img.profile_avatar {
     height: 166px;
 }
 
-.profile_header_badgeinfo .user_level {
+.profile_header_badgeinformation .user_level {
 	line-height: 40px;
 	margin-bottom: 13px;
 }
 
-.profile_header_badgeinfo .user_level .userLevel {
+.profile_header_badgeinformation .user_level .userLevel {
 	vertical-align: middle;
 }
 
@@ -106,19 +97,17 @@ img.profile_avatar {
     display: flex;
     align-items: center;
     gap: 8px;
-	border-radius: 3px;
-    background-color: rgba( 0, 0, 0, 0.3 );
 }
 
-.profile_header_badgeinfo {
+.profile_header_badgeinformation {
     float: right;
 }
 
-.profile_header_badgeinfo_badge_area {
+.profile_header_badgeinformation_badge_area {
     width: 268px;
 }
 
-.profile_header_badgeinfo .user_level {
+.profile_header_badgeinformation .user_level {
     line-height: 40px;
     margin-bottom: 13px;
     font-size: 24px;
@@ -158,19 +147,11 @@ img.profile_avatar {
     padding-left: 3px;
 }
 
-.ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
 .badge_description {
     font-size: 12px;
 	height: 30px;
 	padding-left: 4px;
 }
-
-/*Comment area*/
 
 .profile_comment_area {
 	position: relative;
@@ -191,9 +172,6 @@ img.profile_avatar {
 	border-bottom: none;
 	padding: 6px 10px;
 	line-height: 26px;
-	border-radius: 3px;
-	backdrop-filter: blur(20px);
-	background-color: rgba( 0, 0, 0, 0.3 );
 }
 
 .profile_leftcollumn_header h2 {
@@ -217,29 +195,26 @@ img.profile_avatar {
 }
 
 img.guest_avatar{
-		background: -webkit-linear-gradient( top, #515151 5%, #474747 95%);
-		background: linear-gradient( to bottom, #515151 5%, #474747 95%);
-		position: absolute;
-		left: 5px;
-		top: 8px;
-		width: 34px;
-		height: 34px;
-		max-height: 36px;
-		max-width: 36px;
-		border-radius: 0;
-		padding: 1px;
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	width: 34px;
+	height: 34px;
+	max-height: 36px;
+	max-width: 36px;
+	border-radius: 0;
+	padding: 1px;
 }
 
 .commentsection_comment_author {
     margin-bottom: 2px;
     line-height: 16px;
 	font-size: 14px;
-	   color: #ebebeb;
 }
 
 .commentsection_comment_timestamp {
     font-size: 11px;
-    color: #56707f;
+    color: #2b3f4b;
     margin-left: 4px;
 }
 
@@ -250,4 +225,167 @@ img.guest_avatar{
     overflow-y: auto;
     max-height: 400px;
     line-height: 18px;
+}
+
+.profile_recentgame_header {
+	margin-bottom: 8px;
+}
+
+.recentactivity {
+	float: right;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.recent_game {
+	margin-bottom: 21px;
+}
+
+.recent_game_content {
+	padding: 8px 10px;
+}
+
+.recent_game .game_information {
+	position: relative;
+	height: 69px;
+}
+
+.recent_game .game_information .game_information_img {
+	float: left;
+	margin-right: 8px;
+	width: 184px;
+	height: 69px;
+}
+
+.recent_game .game_information .game_information_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.recent_game .game_information .game_information_details {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+	color:grey;
+}
+
+.recent_game .game_information .game_name {
+	padding-top: 10px;
+	font-size: 14px;
+	color: white;
+}
+
+.profile_elements {
+	font-size: 14px;
+	margin-bottom: 4px;
+	min-height: 29px;
+}
+
+.profile_elements .count_total {
+			font-family: Sans-serif;
+		font-weight: 200;
+
+			color: #9b9b9b;
+	font-size: 24px;
+}
+
+.status {
+	margin-bottom: 32px;
+}
+
+.status_header {
+			font-family: Sans-serif;
+		font-weight: 200;
+
+			font-size: 20px;
+}
+
+.profile_badges_badge, .profile_badges_badge img {
+	width: 54px;
+	height: 54px;
+}
+.profile_badges_badge {
+	float: left;
+	margin-right: 16px;
+}
+.profile_badges_badge.last {
+	margin-right: 0;
+}
+
+.profile_badges, .profile_items, .profile_groups {
+	margin-bottom: 40px;
+}
+
+.profile_group {
+	position: relative;
+
+	word-wrap: break-word;
+	overflow: hidden;
+
+	padding-top: 1px;
+	padding-left: 42px;
+	height: 36px;
+
+}
+
+.profile_group.profile_primary_group {
+	padding-top: 10px;
+	padding-left: 80px;
+	height: 60px;
+
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.profile_group_avatar {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	box-shadow: 2px 2px 3px #0c0c0c;
+
+	width: 32px;
+	height: 32px;
+}
+
+.profile_group_avatar img {
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+}
+
+.profile_content {
+	position: relative;
+	padding: 12px 12px 64px 12px;
+	width: 952px;
+	margin: 0 auto;
+
+	font-size: 13px;
+
+	min-height: calc( 100vh - 511px );
+	color: #d4d5d3;
+}
+
+.profile_content_inner {
+	position: relative;
+}
+
+.profile_leftcollumn {
+	width: 652px;
+	float: left;
+}
+
+.profile_rightcollumn {
+	padding: 10px;
+	width: 268px;
+	float: right;
+}
+
+.blur_background
+{
+    background-color: rgba( 0, 0, 0, 0.3 );
+	backdrop-filter: blur(20px);
+    border-radius: 3px;
 }
