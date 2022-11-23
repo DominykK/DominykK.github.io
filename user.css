@@ -6,14 +6,10 @@
 }
 
 .userAvatar.offline, .guest_avatar.offline {
-
-	background: -webkit-linear-gradient( top, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 	background: linear-gradient( to bottom, rgba(106,106,106,1) 5%, rgba(85,85,85,1) 95%);
 }
 
 .userAvatar.online, .guest_avatar.online {
-
-	background: -webkit-linear-gradient( top, rgb(83, 196, 83) 5%, rgb(12, 87, 46) 95%);
 	background: linear-gradient( to bottom, rgb(83, 196, 92) 5%, rgb(12, 87, 46) 95%);
 }
 

@@ -16,12 +16,6 @@ h2 {
 	color: white;
 }
 
-.ellipsis {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
 .profile_header_background_texture {
     max-width: 976px;
     min-height: 224px;
@@ -366,4 +360,10 @@ img.guest_avatar{
     background-color: rgba( 0, 0, 0, 0.3 );
 	backdrop-filter: blur(20px);
     border-radius: 3px;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
